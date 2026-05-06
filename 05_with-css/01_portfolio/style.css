@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+
+
+
+/* body {
+    font-family: Arial;
+}
+
+header {
+    background-color: lightgrey;
+    height: fit-content;
+    padding: 10px;
+} */
+
+
+/* height - fit content extra till now but not know why, I was just experimenting */
+
+/* Earlier it was also written section {margin: 20px 0}, but why don't know 
+
+same for footer too but don't know
+____________________________________________________
+
+I understood, it is for separating content and making everything look separate and clear.
+*/
