@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML </title>
+</head>
+<body>
+    <table>
+        <thead>
+            <caption></caption>
+        </thead>
+
+        <tbody>
+            <tr></tr>
+            <td></td>
+            <th colspan="" rowspan=""></th>
+        </tbody>
+        
+        <tfoot>
+            <tr></tr>
+            <th></th>
+            <td></td>
+        </tfoot>
+        
+    </table>
+
+
+
+    <!-- Basic Table -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>22</td>
+        </tr>
+
+        <tr>
+            <td>Emma</td>
+            <td>25</td>
+        </tr>
+    </table><br><br>
+
+
+
+    <!-- <thead> for creating table head -->
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+
+    <!-- <tbody> for creating table body -->
+    <tbody>
+        <tr>
+            <td>Rahul</td>
+            <td>21</td>
+        </tr>
+    </tbody>
+
+    <!-- <tfoot> for creating table foot -->
+    <tfoot>
+        <tr>
+            <td colspan="2">End of Data </td>
+        </tr>
+    </tfoot><br><br>
+
+
+
+
+    <!-- styling instead of using "table border = 1" -->
+    <table style="border-collapse: collapse; border: 1px solid black;">
+        <tr>
+            <td style="border: 1px solid black; padding: 4px;">Name</td>
+            <td style="border: 1px solid black; padding: 4px;">Age</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 4px;">John</td>
+            <td style="border: 1px solid black; padding: 4px;">25</td>
+        </tr>
+    </table><br><br>
+
+
+
+
+    <!-- table>(thead>tr>th*2)+(tbody>(tr>td*3)*2)+(tfoot>tr>td) -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Aman</td>
+                <td>HTML</td>
+                <td>95</td>
+            </tr>
+
+            <tr>
+                <td>Priya</td>
+                <td>CSS</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Result Published</td>
+            </tr>
+        </tfoot>
+    </table><br><br>
+
+
+
+
+    <!-- Understanding colspan -->
+    <td colspan="2">Merged Columns</td>
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact</th>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>999999999</td>
+            <td>rahul@gmail.com</td>
+        </tr>
+    </table><br><br>
+
+
+
+    <!-- Understanding rowspan -->
+    <td rowspan="2">HTML</td>
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Student</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">HTML</td>
+            <td>Rahul</td>
+        </tr>
+
+        <tr>
+            <td>Priya</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <td>Product 1</td>
+            <td>$20</td>
+        </tr>
+
+        <tr>
+            <td>Product 2</td>
+            <td>$50</td>
+        </tr>
+    </table><br><br>
+
+</body>
+</html>
